@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Login</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; padding-top: 50px;">
+    <h2 style="color: #333;">Login</h2>
+
+    <form action="dashboard.html" method="POST"
+        style="background: white; padding: 20px; width: 400px; margin: auto; border-radius: 5px; box-shadow: Opx Opx 10px Орх #ccc; text-align: center;">
+    
+        <label style="display: block; margin-bottom: 5px;">Email Address:</label> 
+        <input type="email" name="email" required
+            style="width: 80%; padding: 8px; margin: auto; margin-bottom: 10px; display: block; border: 1px solid #ccc; border-radius: 3px;">
+        
+        <label style="display: block; margin-bottom: 5px;">Password:</Label> 
+        <input type="password" name="password" required
+            style="width: 80%; padding: 8px; margin: auto; margin-bottom: 10px; display: block; border: 1px solid #ccc; border-radius: 3px;">
+            
+        <label style="display: block; margin-bottom: 10px;">
+            <input type="checkbox" onclick="togglePassword()"> Show Password
+        </label>
+    
+    <button type="submit"
+        style="width: 80%; padding: 10px; background-color: blue; color: white; border: none; cursor: pointer; border-radius: 3px; margin-top: 10px;">
+        Login 
+    </button>
+</form>
+
+<p style="margin-top: 15px;">
+    <a href="#" style="color: blue;">Forgot Password?</a>
+</р>
+<p>Don't have an account?
+    <a href="sign in.html" style="color: blue;">Sign In</a>
+</р>
+<script>
+    function togglePassword(){
+        const passwordField = document.querySelector('input[name="password"]');
+        passwordField. type = passwordField.type === 'password' ? 'text' : 'password';
+    }
+</script>
+</body> 
+</html>

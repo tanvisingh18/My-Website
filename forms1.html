@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>HTML5 Elements Demo</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f8ff; margin: 20px;">
+<h2 style="text-align: center; color: #2c3e50;">HTML5 Elements Demo</h2>
+<form action="submit.html" method="POST"
+style="background: #ffffff; padding: 20px; margin: auto; max-width: 600px;
+border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+<fieldset style="margin-bottom: 20px; border: 1px solid #3498db; padding: 15px; border-radius: 5px;">
+<Legend style="font-weight: bold; color: #3498db;">Personal Information</legend> <label for="name" style="display: block; margin-bottom: 10px; color: #2c3e50;">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required
+style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+<label style="display: block; margin-bottom: 10px; color: #2c3e50;">Gender:</label>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male" style="margin-right: 15px; color: #34495e;">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female" style="color: #34495e;">Female</label>
+<label style="display: block; margin-top: 10px; margin-bottom: 10px; color: #2c3e50;">Hobbies:</label>
+<input type="checkbox" id="reading" name="hobbies" value="reading">
+<label for="reading" style="margin-right: 15px; color: #34495e;">Reading</label>
+<input type="checkbox" id="traveling" name="hobbies" value="traveling">
+<label for="traveling" style="margin-right: 15px; color: #34495e;">Traveling</Label>
+<input type="checkbox" id="gaming" name="hobbies" value="gaming">
+<Label for="gaming" style="color: #34495e;">Gaming</label>
+</fieldset>
+<fieldset style="margin-bottom: 20px; border: 1px solid #9b59b6; padding: 15px; border-radius: 5px;">
+<legend style="font-weight: bold; color: #9659b6;">Preferences</legend>
+<label for="country" style="display: block; margin-bottom: 10px; color: #2c3e50;">Country:</label>
+<select id="country" name="country"
+style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+<option value="usa">USA</option>
+<option value="uk">UK</option>
+<option value="india">India</option>
+<option value="australia">Australia</option>
+</select>
+<label for="languages" style="display: block; margin-bottom: 10px; color: #2c3e50;">Languages Known:</label>
+<select id="languages" name="languages[]" size="3" multiple
+style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+<option value="english">English</option>
+<option value="spanish">Spanish</option>
+<option value="french">French</option>
+<option value="german">German</option>
+</select>
+</fieldset>
+<label for="subscription" style="display: block; margin-bottom: 10px; color: #2c3e50;">Subscription Plan:</Label>
+<select id="subscription" name="subscription"
+style="width: 100%; padding: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;">
+<option value="basic">Basic</option>
+<option value="standard">Standard</option>
+<option value="premium">Premium</option>
+</select>
+<label for="comments" style="display: block; margin-bottom: 10px; color: #2c3e50;">Comments:</label>
+<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments here"
+style="width: 100%; padding: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+<label for="skills" style="display: block; margin-bottom: 10px; color: #2c3e50;">Skills:</label>
+    <input type="text" id="skills" name="skills" list="skills-list"
+style="width: 100%; padding: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;"> <datalist id="skills-list"> <option value="HTML"> <option value="CSS"> <option value="JavaScript"> <option value="Python"> <option value="Java">
+</datalist>
+<button type="submit"
+style="width: 100%; padding: 10px; background-color: #27ae60; color: white; border: none; cursor: pointer; border-radius: 5px;">
+Submit 
+</button>
+</form>
+</body> 
+</html>

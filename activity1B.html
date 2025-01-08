@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1B</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f3f4f7; color: #333;">
+    <header style="background-color: #FFB6C1; padding: 60px 20px; text-align: center; color: white;">
+        <h1 style="font-size: 3.5em; margin: 0;">Activity 1B</h1>
+        <p style="font-size: 1.2em; margin: 10px 0;">Compare different HTML elements</p>
+    </header>
+
+    <section style="margin: 40px; display: flex; flex-direction: column; gap: 40px;">
+        
+        <!-- Subheading 1: Div and Span -->
+        <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 2.5em; color: #FF6347;">1. Div and Span</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f4c7a6">
+                    <th>Screenshot code</th>
+                    <th>Screenshot output</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/div1.png" alt="div and span" width="300"></td>
+                    <td><img src="./images/div2.png" alt="div and span" width="300"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                        <b>Similarities:</b><br>
+                        • <b>Container Elements:</b> Both &lt;div&gt; and &lt;span&gt; are used to group and organize other HTML elements.<br>
+                        • <b>Can Contain Any Content:</b> They can contain any type of content, such as text, images, or other elements.<br>
+                        • <b>Can Be Styled with CSS:</b> Both &lt;div&gt; and &lt;span&gt; can be styled or positioned using CSS.<br><br>
+
+                        <b>Differences:</b><br>
+                        • <b>Div:</b> A block-level element, meaning it takes up the full width of its parent container by default. It creates a new block of content and is typically used for structuring large sections of a webpage (e.g., layouts, sections).<br>
+                        • <b>Span:</b> An inline element, meaning it only takes up as much width as necessary and does not break the flow of content. It is used for smaller sections of content, typically for applying styles to portions of text or other inline elements without creating a new block.<br><br>
+
+                        <b>Inference:</b><br>
+                        While both &lt;div&gt; and &lt;span&gt; serve as generic containers, &lt;div&gt; is intended for larger, block-level structural grouping of elements, whereas &lt;span&gt; is used for smaller, inline groupings. The choice between them depends on whether you need block-level or inline behavior for the content you are organizing.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Subheading 2: Div and Section -->
+        <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 2.5em; color: #FF6347;">2. Div and Section</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f4c7a6">
+                    <th>Screenshot code</th>
+                    <th>Screenshot output</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/3.png" alt="div and section" width="300"></td>
+                    <td><img src="./images/4.png" alt="div and section" width="300"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                        <b>Similarities:</b><br>
+                        • Both are containers used to group and organize content.<br>
+                        • Both can contain any type of content.<br>
+                        • Both can be styled or positioned using CSS.<br><br>
+
+                        <b>Differences:</b><br>
+                        • <b>Div:</b> A non-semantic element that does not provide any meaning to the content it holds. It’s often used as a generic container for layout purposes.<br>
+                        • <b>Section:</b> A semantic element that explicitly defines a section of related content, often accompanied by a heading. It provides structure and meaning to the document.<br><br>
+
+                        <b>Inference:</b><br> While both &lt;div&gt; and &lt;section&gt; serve as containers, &lt;section&gt; offers more meaningful structure by marking specific, related content with a defined
+                        purpose, while &lt;div&gt; is more neutral and flexible, often used for layout without
+                        conveying specific meaning about the content.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Subheading 3: Paragraph and Article -->
+        <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 2.5em; color: #FF6347;">3. Paragraph and Article</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f4c7a6">
+                    <th>Screenshot code</th>
+                    <th>Screenshot output</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/5.png" alt="paragraph and article" width="300"></td>
+                    <td><img src="./images/6.png" alt="paragraph and article" width="300"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                        <b>Similarities:</b><br>
+                        • Both are semantic elements used to organize content.<br><br>
+                        • Both can contain text and other inline elements, such as links or spans.<br><br>
+                        • Both are commonly used for textual content.<br><br>
+
+                        <b>Differences:</b><br>
+                        • <b>p:</b> Represents a single block of text. It is typically used for short pieces of content within other containers.<br>
+                        • <b>article:</b> Represents a self-contained, independent piece of content, such as a blog post, news article, or forum post. It usually includes headings and may contain multiple paragraphs.<br><br>
+
+                        <b>Inference:</b><br>
+                        The &lt;p&gt; element is ideal for simple, discrete text blocks, while the
+                        <article> element is designed for more complex, standalone content that might
+                        contain multiple &lt;p&gt; elements and other structural components. They cater to
+                        different levels of content granularity but both contribute to meaningful content
+                        organization.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Subheading 4: Header and Nav -->
+        <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 2.5em; color: #FF6347;">4. Header and Nav</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f4c7a6">
+                    <th>Screenshot code</th>
+                    <th>Screenshot output</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/7.png" alt="header and nav" width="300"></td>
+                    <td><img src="./images/8.png" alt="header and nav" width="300"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                        <b>Similarities:</b><br>
+                        • Both are structural elements used to define the page's header area.<br>
+                        • Both are important for creating navigational structures and guiding the user.<br><br>
+
+                        <b>Differences:</b><br>
+                        • <b>Header:</b> Defines a header for the page or a section, typically used to contain the site’s logo, branding, and introductory information.<br>
+                        • <b>Nav:</b> Specifically designed for navigation links, typically used to group and organize menus or links that lead to other sections of the site.<br><br>
+
+                        <b>Inference:</b><br> While both elements serve structural purposes in creating a layout, the
+                        <header> element is more general and can contain various types of content, while
+                        <nav> is used specifically for navigation links.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Subheading 5: Main and Footer -->
+        <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 2.5em; color: #FF6347;">5. Main and Footer</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f4c7a6">
+                    <th>Screenshot code</th>
+                    <th>Screenshot output</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/9.png" alt="main and footer" width="300"></td>
+                    <td><img src="./images/10.png" alt="main and footer" width="300"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                        <b>Similarities:</b><br>
+                        • Both are structural elements used to define the content and layout of a page.<br>
+                        • Both help to organize the overall page structure.<br><br>
+
+                        <b>Differences:</b><br>
+                        • <b>Main:</b> Represents the primary content area of the page. It should be unique and directly related to the central purpose of the page.<br>
+                        • <b>Footer:</b> Defines the footer of the page, typically containing copyright, contact, and other important information.<br><br>
+
+                        <b>Inference:</b><br> Both &lt;main&gt; and &lt;footer&gt; are essential for the overall structure of a page, but
+                        they serve different purposes—&lt;main&gt; for the main content and &lt;footer&gt; for
+                        additional information that belongs at the bottom of the page.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Subheading 6: Video and Audio -->
+        <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 2.5em; color: #FF6347;">6. Video and Audio</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f4c7a6">
+                    <th>Screenshot code</th>
+                    <th>Screenshot output</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/11.png" alt="video and audio" width="300"></td>
+                    <td><img src="./images/12.png" alt="video and audio" width="300"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                        <b>Similarities:</b><br>
+                        • Both are used to embed media content into a webpage.<br>
+                        • Both elements have controls (e.g., play, pause) that can be provided to users.<br><br>
+
+                        <b>Differences:</b><br>
+                        • <b>Video:</b> Used to embed video files, such as MP4 or WebM formats.<br>
+                        • <b>Audio:</b> Used to embed audio files, such as MP3 or Ogg formats.<br><br>
+
+                        <b>Inference:</b><br> The &lt;video&gt; and &lt;audio&gt; elements are used to embed different types of media files into a webpage, enabling rich multimedia experiences.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Subheading 7: Img and Figure -->
+        <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 2.5em; color: #FF6347;">7. Img and Figure</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f4c7a6">
+                    <th>Screenshot code</th>
+                    <th>Screenshot output</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/13.png" alt="img and figure" width="300"></td>
+                    <td><img src="./images/14.png" alt="img and figure" width="300"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                        <b>Similarities:</b><br>
+                        • Both are used to display images in a webpage.<br>
+                        • Both can be styled using CSS.<br><br>
+
+                        <b>Differences:</b><br>
+                        • <b>Img:</b> A self-contained element used to display images directly in the content.<br>
+                        • <b>Figure:</b> A semantic element used to represent a unit of content, such as an image with a caption (e.g., &lt;figcaption&gt;). It is more meaningful and can help describe complex images in context.<br><br>
+
+                        <b>Inference:</b><br> The &lt;img&gt; element is used for simple image inclusion, while &lt;figure&gt; adds structure and meaning, particularly useful when images require additional context or captions.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+</body>
+</html>

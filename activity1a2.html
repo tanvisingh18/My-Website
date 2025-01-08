@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Data Representation</title>
+ <style>
+ body {
+     font-family: 'Arial', sans-serif;
+     background-color: #f0f8ff;
+     color: #333;
+     margin: 20px;
+     line-height: 1.6;
+ }
+ h1 {
+     text-align: center;
+     color: #4caf50;
+     font-size: 2.5em;
+     text-shadow: 2px 2px 4px #aaa;
+ }
+ h2 {
+     text-align: center;
+     color: #555;
+     font-style: italic;
+     font-size: 1.8em;
+     text-decoration: underline;
+ }
+ ul, ol {
+     padding: 10px;
+     margin: 20px auto;
+     max-width: 600px;
+     list-style: none;
+     background-color: #fffbea;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ ul li, ol li {
+     font-size: 1.2em;
+     margin: 10px 0;
+     padding: 10px;
+     background-color: #e0f7fa;
+     border: 1px solid #b2ebf2;
+     border-radius: 5px;
+     color: #444;
+ }
+ ul li::before, ol li::before {
+     content: '\2022'; /* Bullet point symbol */
+     color: #0073e6; /* Color of the bullet */
+     font-weight: bold;
+     font-size: 1.5em;
+     margin-right: 10px;
+ }
+ .highlight {
+     font-weight: bold;
+     color: #ff5722;
+     background-color: #ffe5e0;
+     padding: 2px 5px;
+     border-radius: 4px;
+ }
+ .review-item {
+     display: flex;
+     align-items: flex-start;
+     gap: 15px;
+     margin-bottom: 30px; /* Increased margin for spacing */
+     border: 1px solid #ddd;
+     padding: 10px;
+     border-radius: 8px;
+     background-color: #f9f9f9;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ .review-item.movie {
+     margin-bottom: 50px; /* Additional spacing for movie section */
+ }
+ img {
+     width: 150px;
+     height: auto;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ .review-text {
+     flex: 1;
+     text-align: justify;
+ }
+ p {
+     margin: 0;
+     color: #555;
+ }
+ </style>
+</head>
+<body>
+ <h1>Data Representation</h1>
+ <!-- List of Courses in Winter 2024-2025 -->
+ <section>
+     <h2>Courses in Winter 2024-2025</h2>
+     <ul>
+         <li>Introduction to Computer Science</li>
+         <li>Advanced Web Development</li>
+         <li>Data Structures and Algorithms</li>
+         <li>Artificial Intelligence Basics</li>
+         <li>Cloud Computing</li>
+     </ul>
+ </section>
+ <!-- List of Programming Languages with Ratings -->
+ <section>
+     <h2>Programming Languages with Ratings</h2>
+     <ol>
+         <li>Python - <span class="highlight">9/10</span></li>
+         <li>JavaScript - <span class="highlight">8/10</span></li>
+         <li>Java - <span class="highlight">7.5/10</span></li>
+         <li>C++ - <span class="highlight">8/10</span></li>
+         <li>Ruby - <span class="highlight">6.5/10</span></li>
+     </ol>
+ </section>
+ <!-- Reviews/Book Summary -->
+ <section>
+     <h2>Reviews or Book Summary</h2>
+     <div class="review-item movie">
+         <img src="https://m.media-amazon.com/images/I/71DwIcSgFcS.jpg" alt="Inception Movie Poster">
+         <div class="review-text">
+             <p><strong>Movie:</strong> Inception</p>
+             <p><em>Review:</em> A mind-bending thriller that explores dreams within dreams. The plot is intricate, and the visual effects are stunning. Exceptional performances by Leonardo DiCaprio and the cast, paired with Hans Zimmer’s electrifying score, make it unforgettable. <span class="highlight">9.5/10</span>.</p>
+         </div>
+     </div>
+     <div class="review-item">
+         <img src="https://i.pinimg.com/originals/19/48/06/194806179410aba69fda9170bfbac89b.jpg" alt="To Kill a Mockingbird Book Cover">
+         <div class="review-text">
+             <p><strong>Book:</strong> To Kill a Mockingbird by Harper Lee</p>
+             <p><em>Summary:</em> A powerful story of racial injustice and moral growth in the Deep South, narrated through the eyes of young Scout Finch. Harper Lee’s storytelling highlights compassion and resilience, with memorable characters like Atticus Finch.</p>
+         </div>
+     </div>
+     <div class="review-item">
+         <img src="https://m.media-amazon.com/images/I/81d+ctRGhcL.jpg" alt="Breaking Bad Show Poster">
+         <div class="review-text">
+             <p><strong>TV Show:</strong> Breaking Bad</p>
+             <p><em>Review:</em> An intense crime drama following Walter White's transformation from a chemistry teacher to a drug kingpin. Complex characters, brilliant storytelling, and a gripping narrative make it a masterpiece in television history.</p>
+         </div>
+     </div>
+ </section>
+</body>
+</html>
